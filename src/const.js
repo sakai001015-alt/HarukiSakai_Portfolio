@@ -1,6 +1,6 @@
 export const ROUTES ={
-    HOME: "/",
-    ABOUT: "/about",
-    CAREER: "/career",
-    SKILL: "/skill"
+    HOME: "/HarukiSakai_Portfolio/",
+    ABOUT: "/HarukiSakai_Portfolio/about",
+    CAREER: "/HarukiSakai_Portfolio/career",
+    SKILL: "/HarukiSakai_Portfolio/skill"
 }
