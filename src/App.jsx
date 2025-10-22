@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage";
+import TopPage from "./pages/HomePage";
 import AboutMePage from "./pages/AboutMePage";
 import CareerPage from "./pages/CareerPage";
 import SkillPage from "./pages/SkillPage";
@@ -16,7 +17,7 @@ function App() {
           <div className="page">
             <Header />
             <Routes>
-              <Route path={ROUTES.TOP} element={<HomePage />} />
+              <Route path={ROUTES.TOP} element={<TopPage />} />
               <Route path={ROUTES.HOME} element={<HomePage />} />
               <Route path={ROUTES.ABOUT} element={<AboutMePage />} />
               <Route path={ROUTES.CAREER} element={<CareerPage />} />
