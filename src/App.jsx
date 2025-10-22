@@ -6,14 +6,14 @@ import CareerPage from "./pages/CareerPage";
 import SkillPage from "./pages/SkillPage";
 import { ROUTES } from "./const";
 import Header from "./components/Header/Header";
-import React from 'react';
 import ParticlesBackground from './ParticlesBackground';
 
 function App() {
   return (
       <div className="app-container">
         <ParticlesBackground />
-          <BrowserRouter>
+        ReactDOM.createRoot(document.getElementById("root")!).render(
+          <BrowserRouter basename={import.meta.env.DEV ? "/" : "/レポジトリ名/"}>
           <div className="page">
             <Header />
             <Routes>
@@ -24,6 +24,7 @@ function App() {
             </Routes>
           </div>
           </BrowserRouter>
+        );
       </div>
       
       
