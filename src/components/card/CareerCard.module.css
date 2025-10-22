@@ -1,0 +1,42 @@
+.container {
+  background-color: #eff3ee;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 20%; /* カードの幅 */
+  font-family: sans-serif;
+  margin: 20px 5%;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.container:hover{
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+	transform: translateY(-0.50em);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.card-description {
+  color: #666;
+  font-size: 1rem;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}

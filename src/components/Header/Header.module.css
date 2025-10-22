@@ -1,0 +1,35 @@
+.header{
+    background: #4fac8b;
+    padding: 0 3vw;
+    margin: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+.sitename{
+    color: aliceblue;
+    text-decoration: none;
+}
+.sitename a:hover{
+    pointer-events: none;
+}
+.nav_links{
+    display: flex;
+}
+.nav_links li{
+    margin: 0.5vw;
+    list-style: none;
+}
+
+.nav_links li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav_links li a:hover{
+    border-bottom: solid;
+    transition: 0.2s;
+}

@@ -1,0 +1,9 @@
+img {
+    width: 330px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.container{
+    padding: 10% 0%;
+}
