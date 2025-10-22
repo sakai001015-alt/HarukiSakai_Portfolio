@@ -6,9 +6,12 @@ import HomePage from "./pages/HomePage";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
     <Routes>
     <Route path={ROUTES.HOME} element={<HomePage />} />
     </Routes>
+    </BrowserRouter>
+    <App />
+    
   </StrictMode>
 )
