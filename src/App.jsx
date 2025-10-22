@@ -12,7 +12,8 @@ function App() {
   return (
       <div className="app-container">
         <ParticlesBackground />
-          <BrowserRouter>
+          ReactDOM.createRoot(document.getElementById("root")!).render(
+          <BrowserRouter basename={import.meta.env.DEV ? "/" : "HarukiSakai_Portfolio"}>
           <div className="page">
             <Header />
             <Routes>
@@ -23,9 +24,11 @@ function App() {
             </Routes>
           </div>
           </BrowserRouter>
+          );
       </div>
       
       
   );
 }
 export default App;
+
