@@ -16,7 +16,7 @@ function App() {
           <div className="page">
             <Header />
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route exact path="/" element={<HomePage />} />
               <Route path={ROUTES.ABOUT} element={<AboutMePage />} />
               <Route path={ROUTES.CAREER} element={<CareerPage />} />
               <Route path={ROUTES.SKILL} element={<SkillPage />} />
