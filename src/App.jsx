@@ -17,10 +17,10 @@ function App() {
           <div className="page">
             <Header />
             <Routes>
-              <Route path={ROUTES.HOME} element={<HomePage />} />
-              <Route path={ROUTES.ABOUT} element={<AboutMePage />} />
-              <Route path={ROUTES.CAREER} element={<CareerPage />} />
-              <Route path={ROUTES.SKILL} element={<SkillPage />} />
+              <Route path='/' element={<HomePage />} />
+              <Route path='/about' element={<AboutMePage />} />
+              <Route path='/career' element={<CareerPage />} />
+              <Route path='/skill' element={<SkillPage />} />
             </Routes>
           </div>
           </BrowserRouter>
