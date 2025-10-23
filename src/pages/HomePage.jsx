@@ -6,7 +6,7 @@ export default function HomePage() {
     <>
         <div className={styles.container} >
         <h1>Haruki Sakai のポートフォリオサイト</h1>
-        <img src={`${base}31411.png`} alt="icon" />
+        <img src="31411.png" alt="icon" />
         </div>
     </>
   )
