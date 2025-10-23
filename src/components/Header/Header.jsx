@@ -13,13 +13,13 @@ export default function Header() {
               <Link to={APP_NAME + '/'}>Home</Link>
             </li>
             <li>
-              <Link to="/about">AboutMe</Link>
+              <Link to={APP_NAME + '/about'}>AboutMe</Link>
             </li>
             <li>
-              <Link to="/career">Career</Link>
+              <Link to={APP_NAME + '/career'}>Career</Link>
             </li>
             <li>
-              <Link to="/skill">Skill</Link>
+              <Link to={APP_NAME + '/skill'}>Skill</Link>
             </li>
           </ul>
         </nav>
