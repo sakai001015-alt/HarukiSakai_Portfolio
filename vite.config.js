@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/HarukiSakai_Portfolio/',
+  define: {
+    'process.env': {}
+  },                             
+  base: process.env.GITHUB_PAGES ? '/HarukiSakai_Portfolio-app/' : './', 
+  //base: '/HarukiSakai_Portfolio/',
   //base: '/',
   plugins: [react()],
 })
