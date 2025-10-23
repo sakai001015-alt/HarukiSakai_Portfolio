@@ -6,7 +6,7 @@ export default defineConfig({
   define: {
     'process.env': {}
   },                             
-  base: process.env.GITHUB_PAGES ? '/HarukiSakai_Portfolio-app/' : './', 
+  base: process.env.GITHUB_PAGES ? '/HarukiSakai_Portfolio/' : './', 
   //base: '/HarukiSakai_Portfolio/',
   //base: '/',
   plugins: [react()],
