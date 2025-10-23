@@ -5,8 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   define: {
     'process.env': {}
-  },                             
-  base: process.env.GITHUB_PAGES ? '/HarukiSakai_Portfolio/' : './', 
+  },
+  base: process.env.GITHUB_PAGES
+    ? 'HarukiSakai_Portfolio' // レポジトリ名を設定
+    : './',                             
+  //base: process.env.GITHUB_PAGES ? '/HarukiSakai_Portfolio/' : './', 
   //base: '/HarukiSakai_Portfolio/',
   //base: '/',
   plugins: [react()],
