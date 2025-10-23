@@ -17,7 +17,6 @@ function App() {
           <div className="page">
             <Header />
             <Routes>
-              <Route path={ROUTES.TOP} element={<TopPage />} />
               <Route path={ROUTES.HOME} element={<HomePage />} />
               <Route path={ROUTES.ABOUT} element={<AboutMePage />} />
               <Route path={ROUTES.CAREER} element={<CareerPage />} />
