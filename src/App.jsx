@@ -13,7 +13,7 @@ function App() {
   return (
       <div className="app-container">
         <ParticlesBackground />
-          <BrowserRouter>
+          <BrowserRouter basename={import.meta.env.BASE_URL}>
           <div className="page">
             <Header />
             <Routes>
