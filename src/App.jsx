@@ -9,15 +9,16 @@ import { ROUTES } from "./const";
 import Header from "./components/Header/Header";
 import ParticlesBackground from './ParticlesBackground';
 
+const APP_NAME = "HarukiSakai_Portfolio";
 function App() {
   return (
       <div className="app-container">
         <ParticlesBackground />
-          <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <BrowserRouter>
           <div className="page">
             <Header />
             <Routes>
-              <Route path='/' element={<HomePage />} />
+              <Route path={APP_NAME + '/'} element={<HomePage />} />
               <Route path='/about' element={<AboutMePage />} />
               <Route path='/career' element={<CareerPage />} />
               <Route path='/skill' element={<SkillPage />} />
