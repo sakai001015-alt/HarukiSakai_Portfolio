@@ -8,7 +8,7 @@ const simpleRightFlowOptions = {
     fpsLimit: 60,
     detectRetina: true,
     background: { 
-        color: { value: "#bdebb7ff" } // 黒い背景
+        color: { value: "#f7f7f7" } // 背景
     },
     
     // ========== パーティクル基本設定 ==========
@@ -18,7 +18,7 @@ const simpleRightFlowOptions = {
             value: 100, // パーティクルの数を減らし、シンプルに
             density: { enable: false }
         },
-        color: { value: "#fff" }, // 白い円
+        color: { value: "#f7f7f7d0" }, // 白い円
         shape: { type: "circle" },
         opacity: { value: { min: 0.5, max: 1 } },
         size: { value: 3 },
