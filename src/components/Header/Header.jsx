@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <div>Haruki Sakai's Portfolio</div>
+        <div className={styles.sitename}>Haruki Sakai's Portfolio</div>
         <nav>
           <ul className={styles.nav_links}>
             <li>

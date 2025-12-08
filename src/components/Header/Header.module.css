@@ -1,6 +1,13 @@
+:root {
+    --color-primary: #007bff;     
+    --color-text-dark: #333333;   
+    --color-white: #ffffff;
+}
+
 .header{
-    background: #4fac8b;
-    padding: 0 3vw;
+    background: var(--color-white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    padding: 15px 30px;
     margin: 0;
     display: flex;
     justify-content:space-between;
@@ -10,26 +17,49 @@
 }
 
 .sitename{
-    color: aliceblue;
+    color: var(--color-text-dark);
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
 }
+
 .sitename a:hover{
     pointer-events: none;
 }
 .nav_links{
     display: flex;
+    list-style: none;
+    padding: 0; 
+    margin: 0;
 }
 .nav_links li{
-    margin: 0.5vw;
-    list-style: none;
+    margin-left: 25px;
 }
 
 .nav_links li a{
-    color: aliceblue;
+    color: var(--color-text-dark); 
     text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.2s, border-bottom 0.2s;
 }
 
 .nav_links li a:hover{
-    border-bottom: solid;
-    transition: 0.2s;
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+    .sitename {
+        font-size: 1.2rem;
+    }
+    .nav_links li {
+        margin-left: 12px;
+    }
+    .nav_links li a {
+        font-size: 0.9rem;
+    }
 }

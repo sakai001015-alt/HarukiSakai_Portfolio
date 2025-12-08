@@ -1,12 +1,41 @@
+.sectionContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
 .title {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
-    padding: 5px 0px;
-    margin: 0px;
+
+    color: #007bff;
+
+    border-bottom: 3px solid #eeeeee; 
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .display{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    gap: 30px;
+    padding: 0;
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .sectionContainer {
+        padding: 50px 0;
+    }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+    .display {
+        gap: 20px;
+    }
 }

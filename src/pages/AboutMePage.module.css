@@ -1,11 +1,45 @@
+.sectionContainer {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto; 
+    padding: 60px 0;
+}
+
 .title {
-    font-size: 50px;
-    font-weight: bold;
-    padding: 5px 0px;
-    margin: 0px;
+    font-size: 3rem; 
+    font-weight: 700;
+    color: #007bff; 
+    border-bottom: 3px solid #eeeeee; 
+    padding-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .detail {
-    font-size: 20px;
-    padding: 20px 0px;
+    font-size: 1.15rem;
+    color: #333333;
+}
+.detail p {
+    margin-bottom: 20px;
+}
+
+.detail strong {
+    color: #007bff; /* メインカラーで強調 */
+}
+
+/* モバイル対応 */
+@media (max-width: 768px) {
+    .sectionContainer {
+        padding: 50px 0;
+    }
+    .title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .detail {
+        font-size: 1rem;
+    }
+    .paragraph {
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
 }

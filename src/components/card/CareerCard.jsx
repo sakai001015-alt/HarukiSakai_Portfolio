@@ -10,13 +10,13 @@ export default function CareerCard({
   return (
     <>
       <div className={styles.container}>
-        <div className="card-content">
-          <h2 className="card-title">{projectName}</h2>
-          <p className="card-description">
+        <div className={styles.card_content}>
+          <h2 className={styles.card_title}>{projectName}</h2>
+          <p className={styles.card_description}>
             {`経験年数: ${year}年 ${month}ヶ月`}
           </p>
           {buttonText && (
-            <button onClick={onButtonClick} className="card-button">
+            <button onClick={onButtonClick} className={styles.card_button}>
               {buttonText}
             </button>
           )}

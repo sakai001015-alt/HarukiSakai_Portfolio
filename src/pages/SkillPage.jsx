@@ -4,7 +4,7 @@ import styles from "./SkillPage.module.css";
 
 export default function SkillPage() {
   return (
-    <>
+    <div className={styles.sectionContainer}>
       <div className={styles.title}>SkillPage</div>
         <div className={styles.display}>
       {skillData.map((skill) => (
@@ -12,11 +12,10 @@ export default function SkillPage() {
           name={skill.name}
           level={skill.level}
           detail={skill.detail}
-          buttonText="もっと詳しく"
         />
       ))}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -4,7 +4,7 @@ import styles from "./CareerPage.module.css";
 
 export default function CareerPage() {
   return (
-    <>
+    <div className={styles.sectionContainer}>
       <div className={styles.title}>CareerPage</div>
         <div className={styles.display}>
       {careerData.map((career) => (
@@ -15,6 +15,6 @@ export default function CareerPage() {
         />
       ))}
       </div>
-    </>
+    </div>
   );
 }

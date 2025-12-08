@@ -9,7 +9,6 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* 背景色が設定されていない場合、ここで設定 */
   /* background-color: #0d47a1; */ 
 }
 .logo {
