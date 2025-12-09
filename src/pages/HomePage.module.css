@@ -1,13 +1,13 @@
-img {
-    width: 330px;
-  height: 220px;
-  object-fit: contain;
-}
-
 .container{
     min-height: 80vh;
     /* padding: 10% 0%; */
     padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .container h1 {

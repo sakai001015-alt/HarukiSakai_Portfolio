@@ -43,13 +43,16 @@
 .level_area {
   width: 100%;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .level_area img {
   width: 120px; 
   height: auto;
   object-fit: contain;
-  display: block;
+  /* display: block; */
 }
 
 .description {
